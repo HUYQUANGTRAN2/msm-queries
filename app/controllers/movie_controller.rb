@@ -1,5 +1,5 @@
 class MovieController < ApplicationController
-  def movie
-    render({ :template => "misc_templates/movie"})
+  def movie_index
+    render({ :template => "movie_templates/movie"})
   end
 end
