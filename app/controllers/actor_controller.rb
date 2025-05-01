@@ -1,12 +1,9 @@
 class ActorController < ApplicationController
-  def actor_index
-    render({ :template => "actor_templates/actor"})
+  def index
+    render({ :template => "actor_templates/actor_info"})
   end
 
   def show
-    
-    @x= Actor.all.at(0).name
-
-    render({ :template => "actor_templates/actor_details"})
+    render({ :template => "actor_templates/details"})
   end 
 end
